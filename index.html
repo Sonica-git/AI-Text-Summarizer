@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Text Summarizer</h1>
+            <p>Developed by Bibek,Sonica,Ayam,Rashmi</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>Input Text</h2>
+                    <span class="char-count" id="charCount">0 characters</span>
+                </div>
+                <textarea 
+                    id="inputText" 
+                    placeholder="text chai yaah halnu(50 word vanda kam na halnu hai)"
+                    rows="10"
+                ></textarea>
+                
+                <div class="controls">
+                    <div class="style-selector">
+                        <label>Summary Style:</label>
+                        <select id="summaryStyle">
+                            <option value="concise">Concise Paragraph</option>
+                            <option value="bullets">Bullet Points</option>
+                        </select>
+                    </div>
+                    
+                    <button id="summarizeBtn" class="btn-primary">
+                        <span class="btn-text">Summarize</span>
+                        <span class="loader" style="display: none;"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="output-section" id="outputSection" style="display: none;">
+                <div class="section-header">
+                    <h2>Summary</h2>
+                    <div class="stats">
+                        <span id="compressionRate"></span>
+                    </div>
+                </div>
+                <div class="summary-box" id="summaryOutput"></div>
+                <button id="copyBtn" class="btn-secondary">📋 Copy Summary</button>
+            </div>
+
+            <div class="error-message" id="errorMessage" style="display: none;"></div>
+        </main>
+
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
