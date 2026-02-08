@@ -1,0 +1,2 @@
+# AI-Text-Summarizer
+MINOR PROJECT FOE GENAI
